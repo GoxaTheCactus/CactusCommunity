@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to CactusCommunity!</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Neucha&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+	<style>
+		.menu {
+			height: 68px;
+			width: 100vw;
+			background-color: black;
+			position: fixed;
+			z-index: 350;
+		}
+		html {
+			scroll-behavior: smooth;
+		}
+		body {
+			margin: 0px;
+			font-family: 'Montserrat Alternates', sans-serif;
+		}
+		a {
+			text-decoration: none;
+		}
+		h3 {
+			text-align: center;
+		}
+		.div1 {
+			height: 90vh;
+			background-image: url(https://wallpapercave.com/wp/1v5312s.jpg);
+			background-position: center;
+			background-size: cover;
+		}
+		.div2 {
+			background: rgb(255,102,118);
+			background: background: rgb(0,215,86);
+			background: linear-gradient(184deg, rgba(0,215,86,0.5046393557422969) 0%, rgba(0,255,214,0.4990371148459384) 100%);
+			height: 90vh;
+		}
+		.b1 {
+			font-family: 'Neucha', cursive;
+			width: 360px;
+			height: 50px;
+			background-color: #f2fffb;
+			color: black;
+			border-radius: 50px;
+			font-size: 20px;
+			border: none;
+			box-shadow: 0 0 20px #78787866;
+		}
+		.b1:hover .arrow{
+			transform: rotate(360deg);
+		}
+		.button {
+			left: 40vw;
+			top: 87.5vh;
+			position: absolute;
+			z-index: 1;
+		}
+		.name {
+			top: 300px;
+			left: 400px;
+			position: absolute;
+			font-family: 'Amatic SC', cursive;
+			font-size: 100px;
+		}
+		.name2 {
+			top: 450px;
+			left: 700px;
+			position: absolute;
+			font-family: 'Pacifico', cursive;
+			font-size: 100px;
+			z-index: 1;
+		}
+		.arrow {
+			width: 22px;
+			height: 22px;
+			margin-top: 5px;
+			margin-left: 5px;
+			transition: transform 1s ease, margin-left 1s ease;
+		}
+		.arrow-div {
+			width: 31px;
+			height: 33px;
+			padding-right: 3px;
+			background-color: white;
+			box-shadow: 0 0 20px #78787866;
+			border-radius: 20px;
+			position: absolute;
+			left: 160px;
+		}
+		.b1:hover {
+			box-shadow: 0 0 20px #787878aa;
+		}
+		.logo-text {
+			font-family: 'Amatic SC', cursive;
+			font-size: 35px;
+			float: left;
+			color: white;
+			margin-top: 20px;
+			font-weight: 700;
+		}
+		.logo {
+			width: 80px;
+			height: 80px;
+			float: left;
+			margin: 1px;
+			margin-left: 10px;
+			margin-right: 3px;
+		}
+		.menu-buttons {
+			margin-left: 1000px;
+		}
+		.m-b {
+			float: left;
+			color: white;
+			margin-right: 140px;
+			margin-top: 15px;
+			font-family: 'Amatic SC', cursive;
+			font-size: 30px;
+		}
+		.m-b:hover {
+			color: #00ffc3;
+		}
+		.intro-div {
+      		background-image: url(div.svg);
+      		width: 1113.14px;
+      		height: 528.7px;
+      		z-index: 6;
+   		}
+		.intro-text-div {
+			color: white;
+			width: 900px;
+			height: 528.7px;
+			margin-left: 30px;
+			padding-top: 10px;
+		}
+		.intro-text {
+			margin-top: 40px;
+		}
+		.intro {
+			margin-top: 100px;
+			height: 528.7px;
+			width: 99vw;
+			background-image: url(cactus.jpg);
+			z-index: 5;
+		}
+		.user-pic {
+			width: 100px;
+			height: 100px;
+			margin-left: 100px;
+		}
+		.user-pic-div {
+			width: 300px;
+			height: 270px;
+			float: left;
+			margin-left: 200px;
+			background-color: #d5ffe9;
+			border-radius: 300px;
+			padding: 30px;
+			padding-top: 70px;
+			transition: transform 2s ease, background-color 2s ease;
+		}
+		.user-pic-div:hover {
+			transform: rotate(360deg);
+			background-color: #bbfcda;
+		}
+		.users-text-div {
+			width: 1800px;
+			height: 300px;
+			background-color: #00d99f;
+			border-radius: 100px;
+			position: absolute;
+			left: -100px;
+			top: 1550px;
+		}
+		.users-text {
+			margin-left: 120px;
+			margin-top: 20px;
+			position: relative;
+		}
+		.users {
+			margin-top: 400px;
+		}
+		.store-text-div {
+			width: 1770px;
+			height: 190px;
+			background-image: url(div2.svg);
+			margin-left: 100px;
+			padding-left: 30px;
+			padding-top: 10px;
+		}
+		.users-pics {
+			height: 430px;
+			margin-top: 400px;
+		}
+		.store-div1 {
+			background-image: url(cactus1.webp);
+			background-position: center;
+			background-size: cover;
+			width: 300px;
+			height: 150px;
+			border-radius: 50px;
+			color: white;
+			box-shadow: 0 0 20px #a8a7a7;
+			padding-top: 380px;
+			font-size: 70px;
+			text-shadow: 1px 1px 2px black;
+			text-align: center;
+			margin-right: 50px;
+			float: left;
+			transition: box-shadow 0.5s ease;
+		}
+		.store-div2 {
+			background-image: url(cactus2.webp);
+			background-position: center;
+			background-size: cover;
+			width: 300px;
+			height: 150px;
+			border-radius: 50px;
+			color: white;
+			box-shadow: 0 0 20px #a8a7a7;
+			padding-top: 380px;
+			font-size: 70px;
+			text-shadow: 1px 1px 2px black;
+			text-align: center;
+			margin-right: 50px;
+			float: left;
+			transition: box-shadow 0.5s ease;
+		}
+		.store-div3 {
+			background-image: url(cactus3.webp);
+			background-position: center;
+			background-size: cover;
+			width: 300px;
+			height: 150px;
+			border-radius: 50px;
+			color: white;
+			box-shadow: 0 0 20px #a8a7a7;
+			padding-top: 380px;
+			font-size: 70px;
+			text-shadow: 1px 1px 2px black;
+			text-align: center;
+			margin-right: 50px;
+			float: left;
+			transition: box-shadow 0.5s ease;
+		}
+		.store-div4 {
+			background-image: url(arrow8.png);
+			background-position: center;
+			background-size: cover;
+			width: 300px;
+			height: 150px;
+			border-radius: 50px;
+			color: black;
+			box-shadow: 0 0 20px #a8a7a7;
+			padding-top: 380px;
+			font-size: 70px;
+			text-align: center;
+			margin-right: 50px;
+			float: left;
+			transition: box-shadow 0.5s ease;
+		}
+		.store-div1:hover {
+			box-shadow: 0 0 30px #6e6d6d;
+		}
+		.store-div2:hover {
+			box-shadow: 0 0 30px #6e6d6d;
+		}
+		.store-div3:hover {
+			box-shadow: 0 0 30px #6e6d6d;
+		}
+		.store-div4:hover {
+			box-shadow: 0 0 30px #6e6d6d;
+		}
+		.store-divs {
+			width: 1400px;
+			margin: auto;
+			margin-top: 50px;
+		}
+		form {
+			width: 1500px;
+			height: 570px;
+			background-color: #00d99f;
+			border-radius: 100px;
+			margin: auto;
+			margin-top: 650px;
+			padding-top: 50px;
+			font-size: 30px;
+			text-align: center;
+		}
+		.form-text {
+			width: 500px;
+			height: 30px;
+			background-color: #00000000;
+			border: 1px solid black;
+			margin-left: 10px;
+			border-radius: 5px;
+		}
+		.form-box {
+			width: 25px;
+			height: 25px;
+			background-color: #00000000;
+			border: 1px solid white;
+		}
+		.submit {
+			width: 200px;
+			height: 50px;
+			border-radius: 50px;
+			background-color: #00000000;
+			border: 1px black solid;
+			font-family: 'Montserrat Alternates', sans-serif;
+			font-size: 20px;
+			margin-top: 30px;
+		}
+		.footer {
+			background-color: black;
+			height: 100px;
+			margin-top: 30px;
+			color: white;
+			font-size: 25px;
+			padding: 5px;
+			padding-top: 15px;
+		}
+		.sn-pic {
+			width: 40px;
+			height: 40px;
+		}
+		.copyright {
+			text-align: center;
+			margin: auto;
+			width: 500px;
+		}
+		.social_networks {
+			width: 180px;
+			margin: auto;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<a href="">
+			<img class="logo" src="logo.svg"><div class="logo-text">CactusCommunity</div>
+		</a>
+		<div class="menu-buttons">
+			<a href="">
+				<div class="m-b">Сообщество</div>
+			</a>
+			<a href="">
+				<div class="m-b">Магазин</div>
+			</a>
+			<a href="">
+				<div class="m-b">English version</div>
+			</a>
+			<a href="">
+				<div class="m-b">Войти</div>
+			</a>
+		</div>
+	</div>
+	<div class="div1">
+		<div class="div2">
+			<div class="name">Как вы относитесь к...</div>
+			<div class="name2">КАКТУСАМ?</div>
+			<div class="button">
+				<a href="#intro">
+					<button class="b1">Просто обажаю! Листаю дальше!
+						<div class="arrow-div"><img class="arrow" src="https://encrypted-tbn0.gstatic.com/	images?q=tbn:ANd9GcRi5PPc02KMxn-2rStwHAKGQxVZQU6Xz5qjhw&usqp=CAU">
+						</div>
+					</button>
+				</a>
+			</div>
+		</div>
+	</div>
+<div id="intro"></div>
+<div class="intro">
+	<div class="intro-div">
+		<div class="intro-text-div"><h1 class="intro-text">Наше сообщество - для тех, кто фанатеет от кактусов</h1>
+		<p class="intro-text">Если вы это читаете, вы явно к ним не равнодушны. Если вам на них плевать, можете смело закрывать этот сайт - здесь вы не найдёте ничего интересного для себя.</p>
+		<p class="intro-text">Вообще-то, здесь вы можете найти не только информативные блоги о разных видах кактусов и суккулентов и о том, как их содержать. Помимо этого здесь вы найдёте мемы, истории, советы, сможете обменять и продать свой кактус с доставкой <i>по всему миру</i>.</p>
+		<p class="intro-text">Вот немного информации о нашем сообществе...</p></div>
+	</div>
+</div>
+	<div class="users">
+		<div class="users-text-div">
+		<h2 class="users-text">Наши пользователи</h2>
+		<p class="users-text">Наш сайт предназначен для людей всех поколений, частей света и сословий. User'ов нашего сайта объединяет одно - помешанность на растениях, относящихся к семейству Cactaceae.</p>
+		<p class="users-text">Главное правило для всех наших пользователей - <b>все равны</b>. У нас стираются границы, расставленные обществом: носишь ты гучи или ходишь в&nbsp;лохмотьях, чёрный ты или белый, живёшь ты в&nbsp;Беверли Хиллз или в Урюпинске - <i>не важно</i>, ведь ты выращиваешь дома кактус. А может, и несколько. Но&nbsp;это тоже не имеет значения.</p>
+		<p class="users-text">В случае буллинга, троллинга или нарушения других <a href="">правил сообщества</a> - извини, дружище, моментальный бан твоему аккаунту.</p>
+		</div>
+		<div class="users-pics">
+			<div class="user-pic-div">
+				<img class="user-pic" src="community.svg">
+				<h3>Уютная атмосфера в&nbsp;сообществе</h3>
+			</div>
+			<div class="user-pic-div">
+				<img class="user-pic" src="planet-earth.svg">
+				<h3>Пользователи по&nbsp;всему миру</h3>
+			</div>
+			<div class="user-pic-div">
+				<img class="user-pic" src="banned.svg">
+				<h3>Моментальный бан в&nbsp;случае правонарушений</h3>
+			</div>
+		</div>
+	</div>
+	<div class="store">
+		<div class="store-text-div">
+			<h2>Магазин</h2>
+			<p>Помимо форумов, блогов и развлечений наше сообщество также имеет магазин. <a href="#reg">Зарегистрировавшись</a>, вы получаете доступ к нашему глобальному маркетплейсу с обменом, куплей и продажей кактусов. Наши эксперты помогут вам разместить объявление, подскажут цену, за которую ваш кактус охотно приобретут другие или дадут любые другие рекомендации.</p>
+		</div>
+		<div class="store-divs">
+			<h2>Лучшие объявления</h2>
+			<a href=""><div class="store-div1">10,00$</div></a>
+			<a href=""><div class="store-div2">7,00$</div></a>
+			<a href=""><div class="store-div3">12,00$</div></a>
+			<a href=""><div class="store-div4">больше</div></a>
+		</div>
+	</div>
+	<form id="reg">
+		<h2>Ну как, хотите присоединиться к сообществу? Регистрируйтесь!</h2>
+		Имя пользователя:<input class="form-text" placeholder="MrCactus" type="text"><br>
+		E-mail:<input class="form-text" placeholder="cactus@gmail.com" type="email"><br>
+		Телефон:<input class="form-text" placeholder="+7 123 456 78 90" type="text"><br>
+		Пол: М<input class="form-box" type="radio" name="r1">
+		Ж<input class="form-box" type="radio" name="r1"><br>
+		<input class="form-box" type="checkbox">Я соглашаюсь на получение информационных рассылок <br>
+		<input class="submit" type="submit">
+	</form>
+	<div class="footer">
+		<div class="c-sn">
+		<div class="copyright">©CactusCommunity, 2021</div>
+			<div class="social_networks">
+				<a href=""><img class="sn-pic" src="instagram.svg"></a>
+				<a href=""><img class="sn-pic" src="facebook.svg"></a>
+				<a href=""><img class="sn-pic" src="twitter.svg"></a>
+				<a href=""><img class="sn-pic" src="pinterest.svg"></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
