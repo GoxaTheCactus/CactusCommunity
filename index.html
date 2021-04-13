@@ -4,17 +4,11 @@
 	<title>Welcome to CactusCommunity!</title>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Pacifico&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
 	<style>
 		.menu {
@@ -59,6 +53,7 @@
 			font-size: 20px;
 			border: none;
 			box-shadow: 0 0 20px #78787866;
+			transition: transform 0.2s ease, box-shadow 0.2s ease;
 		}
 		.b1:hover .arrow{
 			transform: rotate(360deg);
@@ -103,6 +98,11 @@
 		}
 		.b1:hover {
 			box-shadow: 0 0 20px #787878aa;
+			transform: scale(1.05);
+		}
+		.b1:active {
+			box-shadow: 0 0 20px #787878;
+			transform: scale(1.02);
 		}
 		.logo-text {
 			font-family: 'Amatic SC', cursive;
@@ -171,119 +171,115 @@
 			border-radius: 300px;
 			padding: 30px;
 			padding-top: 70px;
-			transition: transform 2s ease, background-color 2s ease;
+			transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+			box-shadow: 0 0 20px #78787866;
 		}
 		.user-pic-div:hover {
-			transform: rotate(360deg);
+			transform: scale(1.05);
 			background-color: #bbfcda;
+			box-shadow: 0 0 30px #787878aa;
+		}
+		.users-text {
+			margin-top: 40px;
+			text-align: center;
 		}
 		.users-text-div {
 			width: 1800px;
-			height: 300px;
-			background-color: #00d99f;
-			border-radius: 100px;
-			position: absolute;
-			left: -100px;
-			top: 1550px;
-		}
-		.users-text {
-			margin-left: 120px;
-			margin-top: 20px;
-			position: relative;
+			margin: auto;
 		}
 		.users {
-			margin-top: 400px;
+			background-color: #f0f0f0;
+			padding-top: 50px;
+			padding-bottom: 50px;
 		}
 		.store-text-div {
-			width: 1770px;
-			height: 190px;
-			background-image: url(div2.svg);
-			margin-left: 100px;
-			padding-left: 30px;
-			padding-top: 10px;
+			text-align: center;
+			width: 1800px;
+			margin: auto;
 		}
 		.users-pics {
 			height: 430px;
-			margin-top: 400px;
+			margin-top: 100px;
 		}
 		.store-div1 {
 			background-image: url(cactus1.webp);
 			background-position: center;
 			background-size: cover;
 			width: 300px;
-			height: 150px;
+			height: 330px;
 			border-radius: 50px;
 			color: white;
 			box-shadow: 0 0 20px #a8a7a7;
-			padding-top: 380px;
-			font-size: 70px;
-			text-shadow: 1px 1px 2px black;
+			padding-top: 200px;
+			font-size: 50px;
 			text-align: center;
 			margin-right: 50px;
 			float: left;
-			transition: box-shadow 0.5s ease;
+			transition: box-shadow 0.5s ease, transform 0.5s ease;
 		}
 		.store-div2 {
 			background-image: url(cactus2.webp);
 			background-position: center;
 			background-size: cover;
 			width: 300px;
-			height: 150px;
+			height: 330px;
 			border-radius: 50px;
 			color: white;
 			box-shadow: 0 0 20px #a8a7a7;
-			padding-top: 380px;
-			font-size: 70px;
-			text-shadow: 1px 1px 2px black;
+			padding-top: 200px;
+			font-size: 50px;
 			text-align: center;
 			margin-right: 50px;
 			float: left;
-			transition: box-shadow 0.5s ease;
+			transition: box-shadow 0.5s ease, transform 0.5s ease;
 		}
 		.store-div3 {
 			background-image: url(cactus3.webp);
 			background-position: center;
 			background-size: cover;
 			width: 300px;
-			height: 150px;
+			height: 330px;
 			border-radius: 50px;
 			color: white;
 			box-shadow: 0 0 20px #a8a7a7;
-			padding-top: 380px;
-			font-size: 70px;
-			text-shadow: 1px 1px 2px black;
+			padding-top: 200px;
+			font-size: 50px;
 			text-align: center;
 			margin-right: 50px;
 			float: left;
-			transition: box-shadow 0.5s ease;
+			transition: box-shadow 0.5s ease, transform 0.5s ease;
 		}
 		.store-div4 {
 			background-image: url(arrow8.png);
 			background-position: center;
 			background-size: cover;
 			width: 300px;
-			height: 150px;
+			height: 330px;
 			border-radius: 50px;
-			color: black;
+			color: white;
 			box-shadow: 0 0 20px #a8a7a7;
-			padding-top: 380px;
-			font-size: 70px;
+			padding-top: 200px;
+			font-size: 50px;
 			text-align: center;
 			margin-right: 50px;
 			float: left;
-			transition: box-shadow 0.5s ease;
+			transition: box-shadow 0.5s ease, transform 0.5s ease;
 		}
 		.store-div1:hover {
 			box-shadow: 0 0 30px #6e6d6d;
+			transform: scale(1.03);
 		}
 		.store-div2:hover {
 			box-shadow: 0 0 30px #6e6d6d;
+			transform: scale(1.03);
 		}
 		.store-div3:hover {
 			box-shadow: 0 0 30px #6e6d6d;
+			transform: scale(1.03);
 		}
 		.store-div4:hover {
 			box-shadow: 0 0 30px #6e6d6d;
+			transform: scale(1.03);
 		}
 		.store-divs {
 			width: 1400px;
@@ -291,13 +287,11 @@
 			margin-top: 50px;
 		}
 		form {
-			width: 1500px;
-			height: 570px;
-			background-color: #00d99f;
-			border-radius: 100px;
-			margin: auto;
+			height: 650px;
+			background-image: url(3450600_.jpg);
+			background-position: center;
+			background-size: cover;
 			margin-top: 650px;
-			padding-top: 50px;
 			font-size: 30px;
 			text-align: center;
 		}
@@ -308,27 +302,55 @@
 			border: 1px solid black;
 			margin-left: 10px;
 			border-radius: 5px;
+			font-size: 17px;
+			font-family: 'Montserrat Alternates', sans-serif;
+			text-align: center;
+			transition: box-shadow 0.3s ease, transform 0.3s ease;
+		}
+		.form-text:hover {
+			transform: scale(1.02);
+			box-shadow: 0 0 20px #787878aa;
+		}
+		.form-text:active {
+			box-shadow: 0 0 20px #787878;
+			transform: scale(1);
 		}
 		.form-box {
 			width: 25px;
 			height: 25px;
 			background-color: #00000000;
 			border: 1px solid white;
+			transition: transform 0.3s ease;
+		}
+		.form-box:hover {
+			transform: scale(1.25);
+		}
+		.form-box:active {
+			transform: scale(1.1);
 		}
 		.submit {
 			width: 200px;
 			height: 50px;
 			border-radius: 50px;
-			background-color: #00000000;
-			border: 1px black solid;
+			border: none;
+			background-color: #127F7C;
 			font-family: 'Montserrat Alternates', sans-serif;
 			font-size: 20px;
 			margin-top: 30px;
+			transition: box-shadow 0.3s ease, transform 0.3s ease;
+			color: white;
+		}
+		.submit:hover {
+			box-shadow: 0 0 20px #787878aa;
+			transform: scale(1.05);
+		}
+		.submit:active {
+			box-shadow: 0 0 20px #787878;
+			transform: scale(1);
 		}
 		.footer {
 			background-color: black;
 			height: 100px;
-			margin-top: 30px;
 			color: white;
 			font-size: 25px;
 			padding: 5px;
@@ -347,6 +369,81 @@
 			width: 180px;
 			margin: auto;
 			margin-top: 20px;
+		}
+		::placeholder {
+			font-size: 17px;
+			color: black;
+		}
+		.form-dark {
+			background: rgb(79,172,168);
+			background: linear-gradient(135deg, rgba(79,172,168,0.6979166666666667) 0%, rgba(10,224,136,0.6951155462184874) 100%);
+			padding-top: 30px;
+			height: 620px;
+		}
+		table {
+			margin: auto;
+			width: 850px;
+		}
+		th {
+			text-align: right;
+			height: 70px;
+		}
+		.sex {
+			text-align: left;
+			padding-left: 50px;
+		}
+		.reset {
+			width: 200px;
+			height: 50px;
+			border-radius: 50px;
+			border: 1px solid black;
+			background-color: #00000000;
+			font-family: 'Montserrat Alternates', sans-serif;
+			font-size: 20px;
+			margin-top: 30px;
+			transition: box-shadow 0.3s ease, transform 0.3s ease;
+		}
+		.reset:hover {
+			box-shadow: 0 0 20px #787878aa;
+			transform: scale(1.05);
+		}
+		.reset:active {
+			box-shadow: 0 0 20px #787878;
+			transform: scale(1);
+		}
+		s {
+			color: #707070;
+			font-size: 33px;
+			float: left;
+			margin-top: 15px;
+			margin-left: 10px;
+			background-color: #eeeeee;
+			border-radius: 20px;
+		}
+		.skidka {
+			width: 200px;
+			height: 200px;
+			position: relative;
+			right: 30px;
+			bottom: 210px;
+		}
+		.price {
+			margin-left: 15px;
+			background-color: #E84846;
+			width: 160px;
+			border-radius: 30px;
+			float: left;
+		}
+		.sale {
+			width: 500px;
+		}
+		.sale-div {
+			margin: auto;
+			width: 501px;
+			margin-bottom: 30px;
+		}
+		.store-text {
+			margin-top: 50px;
 		}
 	</style>
 </head>
@@ -384,21 +481,21 @@
 			</div>
 		</div>
 	</div>
-<div id="intro"></div>
-<div class="intro">
-	<div class="intro-div">
-		<div class="intro-text-div"><h1 class="intro-text">Наше сообщество - для тех, кто фанатеет от кактусов</h1>
-		<p class="intro-text">Если вы это читаете, вы явно к ним не равнодушны. Если вам на них плевать, можете смело закрывать этот сайт - здесь вы не найдёте ничего интересного для себя.</p>
-		<p class="intro-text">Вообще-то, здесь вы можете найти не только информативные блоги о разных видах кактусов и суккулентов и о том, как их содержать. Помимо этого здесь вы найдёте мемы, истории, советы, сможете обменять и продать свой кактус с доставкой <i>по всему миру</i>.</p>
-		<p class="intro-text">Вот немного информации о нашем сообществе...</p></div>
+	<div id="intro"></div>
+	<div class="intro">
+		<div class="intro-div">
+		<div class="intro-text-div"><h1 class="intro-text">Для тех, кто фанатеет от кактусов</h1>
+			<p class="intro-text">Если вы это читаете, вы явно к ним не равнодушны. Если вам на них плевать, можете смело закрывать этот сайт - здесь вы не найдёте ничего интересного для себя.</p>
+			<p class="intro-text">Вообще-то, здесь вы можете найти не только информативные блоги о разных видах кактусов и суккулентов и о том, как их содержать. Помимо этого здесь вы найдёте мемы, истории, советы, сможете обменять и продать свой кактус с доставкой <i>по всему миру</i>.</p>
+			<p class="intro-text">Вот немного информации о нашем сообществе...</p></div>
+		</div>
 	</div>
-</div>
 	<div class="users">
 		<div class="users-text-div">
-		<h2 class="users-text">Наши пользователи</h2>
-		<p class="users-text">Наш сайт предназначен для людей всех поколений, частей света и сословий. User'ов нашего сайта объединяет одно - помешанность на растениях, относящихся к семейству Cactaceae.</p>
-		<p class="users-text">Главное правило для всех наших пользователей - <b>все равны</b>. У нас стираются границы, расставленные обществом: носишь ты гучи или ходишь в&nbsp;лохмотьях, чёрный ты или белый, живёшь ты в&nbsp;Беверли Хиллз или в Урюпинске - <i>не важно</i>, ведь ты выращиваешь дома кактус. А может, и несколько. Но&nbsp;это тоже не имеет значения.</p>
-		<p class="users-text">В случае буллинга, троллинга или нарушения других <a href="">правил сообщества</a> - извини, дружище, моментальный бан твоему аккаунту.</p>
+			<h2 class="users-text">Наши пользователи</h2>
+			<p class="users-text">Наш сайт предназначен для людей всех поколений, частей света и сословий. User'ов нашего сайта объединяет одно - помешанность на растениях, относящихся к семейству Cactaceae.</p>
+			<p class="users-text">Главное правило для всех наших пользователей - <b>все равны</b>. У нас стираются границы, расставленные обществом: носишь ты гучи или ходишь в&nbsp;лохмотьях, чёрный ты или белый, живёшь ты в&nbsp;Беверли Хиллз или в Урюпинске - <i>не важно</i>, ведь ты выращиваешь дома кактус. А может, и несколько. Но&nbsp;это тоже не имеет значения.</p>
+			<p class="users-text">В случае буллинга, троллинга или нарушения других <a href="">правил сообщества</a> - извини, дружище, моментальный бан твоему аккаунту.</p>
 		</div>
 		<div class="users-pics">
 			<div class="user-pic-div">
@@ -417,27 +514,78 @@
 	</div>
 	<div class="store">
 		<div class="store-text-div">
-			<h2>Магазин</h2>
-			<p>Помимо форумов, блогов и развлечений наше сообщество также имеет магазин. <a href="#reg">Зарегистрировавшись</a>, вы получаете доступ к нашему глобальному маркетплейсу с обменом, куплей и продажей кактусов. Наши эксперты помогут вам разместить объявление, подскажут цену, за которую ваш кактус охотно приобретут другие или дадут любые другие рекомендации.</p>
+			<h2 class="store-text">Магазин</h2>
+			<p class="store-text">Помимо форумов, блогов и развлечений наше сообщество также имеет магазин. <a href="#reg">Зарегистрировавшись</a>, вы получаете доступ к нашему глобальному маркетплейсу с обменом, куплей и продажей кактусов.</p>
+			<p class="store-text">Наши эксперты с радостью помогут вам разместить объявление, подскажут цену, за которую ваш кактус охотно приобретут другие или дадут любые другие рекомендации.</p>
 		</div>
 		<div class="store-divs">
-			<h2>Лучшие объявления</h2>
-			<a href=""><div class="store-div1">10,00$</div></a>
-			<a href=""><div class="store-div2">7,00$</div></a>
-			<a href=""><div class="store-div3">12,00$</div></a>
-			<a href=""><div class="store-div4">больше</div></a>
+			<div class="sale-div">
+				<img src="sale.svg" class="sale">
+			</div>
+			<a href="">
+				<div class="store-div1">
+					<img class="skidka" src="50-percent.svg">
+					<div class="price">7,49$</div>
+					<b><s>$15.00</s></b>
+				</div>
+			</a>
+			<a href="">
+				<div class="store-div2">
+					<img class="skidka" src="50-percent.svg">
+					<div class="price">6,49$</div>
+					<b><s>$13.00</s></b>
+				</div>
+			</a>
+			<a href="">
+				<div class="store-div3">
+					<img class="skidka" src="50-percent.svg">
+					<div class="price">8,99$</div>
+					<b><s>$18.00</s></b>
+				</div>
+			</a>
+			<a href="">
+				<div class="store-div4"></div>
+			</a>
 		</div>
 	</div>
 	<form id="reg">
-		<h2>Ну как, хотите присоединиться к сообществу? Регистрируйтесь!</h2>
-		Имя пользователя:<input class="form-text" placeholder="MrCactus" type="text"><br>
-		E-mail:<input class="form-text" placeholder="cactus@gmail.com" type="email"><br>
-		Телефон:<input class="form-text" placeholder="+7 123 456 78 90" type="text"><br>
-		Пол: М<input class="form-box" type="radio" name="r1">
-		Ж<input class="form-box" type="radio" name="r1"><br>
-		<input class="form-box" type="checkbox">Я соглашаюсь на получение информационных рассылок <br>
-		<input class="submit" type="submit">
-	</form>
+		<div class="form-dark">
+			<h2>Ну как, хотите присоединиться к сообществу? Регистрируйтесь!</h2>
+			<table id="reg">
+				<tbody>
+					<tr>
+						<th>Имя пользователя:</th>
+						<th>
+							<input class="form-text" placeholder="MrCactus" type="text">
+						</th>
+					</tr>
+					<tr>
+						<th>E-mail:</th>
+						<th>
+							<input class="form-text" placeholder="cactus@gmail.com" type="email">
+						</th>
+					</tr>
+					<tr>
+						<th>Телефон:</th>
+						<th>
+							<input class="form-text" placeholder="+7 123 456 78 90" type="text">
+						</th>
+					</tr>
+					<tr>
+						<th>Пол:</th>
+						<th class="sex">М
+						<input class="form-box" type="radio" name="r1">
+						Ж
+						<input class="form-box" type="radio" name="r1"></th>
+					</tr>
+				</tbody>
+			</table>
+			<input class="form-box" type="checkbox">
+			Я соглашаюсь на получение информационных рассылок<br>
+			<input class="submit" type="submit">
+			<input type="reset" class="reset">
+		</div>
+	</form>	
 	<div class="footer">
 		<div class="c-sn">
 		<div class="copyright">©CactusCommunity, 2021</div>
