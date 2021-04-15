@@ -315,6 +315,46 @@
 			box-shadow: 0 0 20px #787878;
 			transform: scale(1);
 		}
+		.form-text {
+			width: 500px;
+			height: 30px;
+			background-color: #00000000;
+			border: 1px solid black;
+			margin-left: 10px;
+			border-radius: 5px;
+			font-size: 17px;
+			font-family: 'Montserrat Alternates', sans-serif;
+			text-align: center;
+			transition: box-shadow 0.3s ease, transform 0.3s ease;
+		}
+		.form-text:hover {
+			transform: scale(1.02);
+			box-shadow: 0 0 20px #787878aa;
+		}
+		.form-text:active {
+			box-shadow: 0 0 20px #787878;
+			transform: scale(1);
+		}
+		.tel {
+			width: 400px;
+			height: 30px;
+			background-color: #00000000;
+			border: 1px solid black;
+			margin-left: 15px;
+			border-radius: 5px;
+			font-size: 17px;
+			font-family: 'Montserrat Alternates', sans-serif;
+			text-align: center;
+			transition: box-shadow 0.3s ease, transform 0.3s ease;
+		}
+		.tel:hover {
+			transform: scale(1.02);
+			box-shadow: 0 0 20px #787878aa;
+		}
+		.tel:active {
+			box-shadow: 0 0 20px #787878;
+			transform: scale(1);
+		}
 		.form-box {
 			width: 25px;
 			height: 25px;
@@ -386,6 +426,10 @@
 		}
 		th {
 			text-align: right;
+			height: 70px;
+		}
+		.tel-th {
+			text-align: left;
 			height: 70px;
 		}
 		.sex {
@@ -567,8 +611,8 @@
 					</tr>
 					<tr>
 						<th>Телефон:</th>
-						<th>
-							<input class="form-text" placeholder="+7 123 456 78 90" type="text">
+						<th class="tel-th">
+							<input class="tel" placeholder="+7 123 456 78 90" type="text">
 						</th>
 					</tr>
 					<tr>
